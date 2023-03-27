@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+      <meta name= "viewport" content="width=device-width, initial-scale=1.0"/>
+      <title> Moneysinvesto </title>
+      <link type="text/css" rel= "stylesheet" href= "MI.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> 
+</head> 
+<body>
+<section class="header">
+      <nav>
+         <a href="moneysinvesto.html"> <img src="images/Moneys.png"></a>
+         <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i> 
+            <ul>
+               <li><a href="">HOME</a></li>
+               <li><a href="">ABOUT</a></li>
+               <li><a href="">CONTACT US</a></li>
+            </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+<div class= "text-box">
+   <h1> MONEYS INVESTO</h1>
+   <P> Our sole mission is to fund and help people develop and implement their ideas and vision</P>
+   <a href="" class="hero-btn"> Read More About Us </a>
+</div>
+
+</section>
+<!--------contact us page------------>
+<section class="purpose">
+   <h1> We Invest In Projects & Ideas</h1>
+   <p>
+      <img class ="idea" src= "images/ideas.jpg" alt=" ">
+   </p>
+</section>
+<!-------------contact us-------------------->
+
+<section class="contact">
+   <h1> Contact Us </h1>
+   
+   <div class="row">
+      <div class="contact-col">
+         <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+               <h5>info@Moneysinvesto.com</h5>
+               <p>Email us your query</p>
+            </span>
+         </div>
+         
+         <form action="form-handle.php" method="post">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="text" name="email" placeholder="Enter email address" required>
+            <input type="text" name="subject" placeholder="Enter your subject" required>
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn2">Send Message</button>
+         </form>
+
+   </div>
+
+</section>
+
+
+
+
+<!------------coppy right------------->
+<div id="footer">
+               &copy; 2021, Moneysinvesto
+               <br/>
+               All the trademarks and registered trademarks appearing on this site are the property of their respective owners.
+            </div>
+
+
+
+
+
+
+<!------Javascript for toggle menu 31 minute mark------>
+
+<script type='text/javascript'>
+
+   var navLinks = document.getElementById("navLinks");
+   function showMenu(){
+      navLinks.style.right = "0";
+   }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+   }
+
+</script>
+</body>
+</html>
